@@ -1,6 +1,6 @@
 package mediatheque;
 
-public abstract class Item {
+public abstract class Item{
 	private String title;
 
 	protected Item(String title) {
@@ -20,5 +20,5 @@ public abstract class Item {
 	public String toString() {
 		return title;
 	}
-	
+	public abstract void accept(ItemVisitor v);
 }
